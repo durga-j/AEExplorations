@@ -75,7 +75,7 @@ function Objects() {
 
     const acc = new Bank("John", 1000);
     acc.deposit(1000);
-    console.log("Account Balance", acc.getBalance());  // Output: 2000
+    console.log("Account Balance", acc.getBalance());  // Output: Account Balance 2000
     
     
     // Polymorphism
