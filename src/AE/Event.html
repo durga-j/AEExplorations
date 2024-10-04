@@ -1,0 +1,42 @@
+<html>
+  <body>
+    <button id="myButton">Click Me!</button><br>
+	<button onclick="alert('Button clicked!')">Inline </button> 
+	
+	 <div id="parent" style="padding: 30px; background-color: lightblue;">
+      Parent Div
+      <button id="child">Click Me</button>
+    </div>
+    <script>
+      const button = document.getElementById("myButton");
+
+      // Attach a click event listener to the button
+      button.addEventListener("click", function() {
+        alert("Button was clicked!");
+      });
+	  
+
+      button.addEventListener("click", function(event) {
+        console.log("Event type: " + event.type);  // Output: click
+        console.log("Target element: " + event.target);  // The button element [object HTMLButtonElement]
+      });
+	  
+	  //Event propagation - bubbling phase 
+	  const parentDiv = document.getElementById("parent");
+      const childButton = document.getElementById("child");
+
+      parentDiv.addEventListener("click", function() {
+        alert("Parent Div clicked");
+      });
+
+      childButton.addEventListener("click", function(event) {
+        alert("Child Button clicked");
+
+        // Prevent the click event from bubbling up to the parent div
+        event.stopPropagation();
+      });
+
+    </script>
+  </body>
+</html>
+
