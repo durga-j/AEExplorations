@@ -18,6 +18,17 @@ import VotingApp from './AE/React/LiftingStateUp';
 import PageLayout from './AE/React/Composition';
 import Inheritance from './AE/React/Inheritance';
 import Hooks from './AE/React/Hooks';
+import SemanticHTML from './AE/React/SemanticHTML';
+import Navigation from './AE/React/KeyboardNav';
+import Modal from './AE/React/ManagingFocus';
+import CodeSplit from './AE/React/CodeSpliting';
+import ThemeProvider from './AE/React/ThemeContext';
+import ThemedComponent from './AE/React/ThemedComponent';
+import ErrorBoundary from './AE/React/ErrorBoundary';
+import ErrorComponent from './AE/React/Component';
+import Table from './AE/React/Frangments';
+import ChartIntegration from './AE/React/Library';
+import JSXinDeep from './AE/React/JSX';
 
 function App() {
   return (
@@ -46,7 +57,24 @@ function App() {
       {/* <VotingApp /> */}
       {/* <PageLayout/> */}
       {/* <Inheritance /> */}
-      <Hooks />
+      {/* <Hooks /> */}
+      {/* <SemanticHTML /> */}
+      {/* <Navigation /> */}
+      {/* <Modal /> */}
+      {/* <CodeSplit /> */}
+
+      {/* <ThemeProvider>
+        <ThemedComponent />
+      </ThemeProvider> */}
+    
+        {/* <ErrorBoundary>
+          <ErrorComponent />
+          </ErrorBoundary> */}
+
+          {/* <Table /> */}
+          {/* <ChartIntegration /> */}
+
+          <JSXinDeep />
 
     </div>
   );
