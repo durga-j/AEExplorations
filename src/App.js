@@ -29,6 +29,11 @@ import ErrorComponent from './AE/React/Component';
 import Table from './AE/React/Frangments';
 import ChartIntegration from './AE/React/Library';
 import JSXinDeep from './AE/React/JSX';
+import ProfilerExp from './AE/React/Profiler';
+import Es6 from './AE/React/ReactWithoutEs6';
+import WithoutJSX from './AE/React/withoutJSX';
+import ReduxImp from './AE/React/Redux';
+// import { Axios } from 'axios';
 
 function App() {
   return (
@@ -74,7 +79,12 @@ function App() {
           {/* <Table /> */}
           {/* <ChartIntegration /> */}
 
-          <JSXinDeep />
+          {/* <JSXinDeep /> */}
+          {/* <ProfilerExp /> */}
+          {/* <Es6 name="World"/> */}
+          {/* <WithoutJSX /> */}
+          <ReduxImp />
+          {/* <Axios /> */}
 
     </div>
   );
