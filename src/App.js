@@ -27,13 +27,13 @@ import ThemedComponent from './AE/React/ThemedComponent';
 import ErrorBoundary from './AE/React/ErrorBoundary';
 import ErrorComponent from './AE/React/Component';
 import Table from './AE/React/Frangments';
-// import ChartIntegration from './AE/React/Library';
+import ChartIntegration from './AE/React/Library';
 import JSXinDeep from './AE/React/JSX';
 import ProfilerExp from './AE/React/Profiler';
 import Es6 from './AE/React/ReactWithoutEs6';
 import WithoutJSX from './AE/React/withoutJSX';
 import ReduxImp from './AE/React/Redux';
-// import TypescriptExp from './AE/React/TypescriptExp';
+import TypescriptExp from './AE/React/TypescriptExp';
 import DataFetching from './AE/React/Axios';
 import Display from './AE/React/Dispay';
 
