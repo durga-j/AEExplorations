@@ -1,0 +1,18 @@
+import { call, put, takeLatest } from 'redux-saga/effects';
+import axios from 'axios';
+import { fetchDataRequest, fetchDataSuccess, fetchDataFailure } from './slice';
+
+function* fetchDataSaga() {
+  try {
+    const response = yield call(axios.get, 'https://jsonplaceholder.typicode.com/posts');
+    yield put(fetchDataSuccess(response.data));
+  } catch (error) {
+    yield put(fetchDataFailure(error.message));
+  }
+}
+
+function* watchFetchDataSaga() {
+  yield takeLatest(fetchDataRequest.type, fetchDataSaga);
+}
+
+export default watchFetchDataSaga;
