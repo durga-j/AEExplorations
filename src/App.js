@@ -37,6 +37,7 @@ import TypescriptExp from './AE/React/TypescriptExp';
 import DataFetching from './AE/React/Axios';
 import Display from './AE/React/Dispay';
 import DataList from './AE/React/Redux/Display';
+import LoginMain from './AE/React/LoginMain';
 
 function App() {
   return (
@@ -90,7 +91,8 @@ function App() {
           {/* <TypescriptExp /> */}
           {/* <DataFetching/> */}
           {/* <Display /> */}
-          <DataList />
+          {/* <DataList /> */}
+          <LoginMain />
 
     </div>
   );
